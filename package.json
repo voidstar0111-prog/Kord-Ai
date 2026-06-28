@@ -20,7 +20,8 @@
   "license": "MIT",
   "homepage": "https://github.com/M3264/Kord-Ai#readme",
   "dependencies": {
-    "@mistralai/mistralai": "0.1.5",
+    "@mistralai/mistralai": "0.1.2"
+    
     
     "axios": "^0.27.2",
     "baileys": "7.0.0-rc.9",
