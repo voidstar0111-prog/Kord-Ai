@@ -4,8 +4,9 @@
   "description": "whatsapp bot made with baileys",
   "main": "index.js",
   "scripts": {
+    "preinstall": "mkdir -p node_modules/@mistralai/esm node_modules/@mistralai/mistralai && echo \"{'type': 'module'}\" > node_modules/@mistralai/esm/package.json && echo \"export class Mistral { constructor() { return new Proxy(() => {}, { get: () => () => {} }) } }; export default Mistral;\" > node_modules/@mistralai/esm/index.js && echo \"{'type': 'module'}\" > node_modules/@mistralai/mistralai/package.json && echo \"export class Mistral { constructor() { return new Proxy(() => {}, { get: () => () => {} }) } }; export default Mistral;\" > node_modules/@mistralai/mistralai/index.js",
     "test": "node index.js",
-    "start": "FORCE_COLOR=1 npx pm2 start . --attach --name kord-v2 -- --color",
+    "start": "FORCE_COLOR=1 npx pm2 start index.js --attach --name kord-v2",
     "build": "echo 'Not needed'",
     "stop": "npx pm2 stop kord-ai"
   },
@@ -20,7 +21,6 @@
   "license": "MIT",
   "homepage": "https://github.com/M3264/Kord-Ai#readme",
   "dependencies": {
-    "@mistralai/mistralai": "^2.2.1",
     "axios": "^0.27.2",
     "baileys": "7.0.0-rc.9",
     "chalk": "^4.1.2",
@@ -47,9 +47,9 @@
     "path": "^0.12.7",
     "pdfkit": "^0.17.1",
     "pino": "^7.9.2",
-    "pm2": "^6.0.5",
+    "pm2": "^5.3.1",
     "sequelize": "^6.21.4",
-    "sharp": "0.32.6",
+    "sharp": "^0.32.6",
     "sqlite": "5.1.1",
     "sqlite3": "^5.0.11",
     "tus-js-client": "^4.3.1",
@@ -58,6 +58,5 @@
     "word-list": "^4.1.0",
     "yarn": "^1.22.22",
     "yt-search": "^2.11.1"
-  },
-  "packageManager": "yarn@1.22.22"
+  }
 }
