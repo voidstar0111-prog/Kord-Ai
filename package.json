@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "node index.js",
-    "start": "FORCE_COLOR=1 npx pm2 start --attach --name kord-v2 --color",
+    "start": "FORCE_COLOR=1 npx pm2 start --attach --name kord-v2",
     "build": "echo 'Not needed'",
     "stop": "npx pm2 stop kord-ai"
   },
@@ -56,7 +56,4 @@
     "uuid": "^11.1.0",
     "wa-sticker-formatter": "^4.4.4",
     "word-list": "^4.1.0",
-    "yarn": "^1.22.22",
-    "yt-search": "^2.11.1"
-  }
-}
+    
