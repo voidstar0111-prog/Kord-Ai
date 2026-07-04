@@ -1,6 +1,6 @@
 module.exports = {
     name: "confess",
-    category: "games",
+    category: "group",
     description: "Anonymously drop a confession into the void.",
     async execute(client, m) {
         // Extract the text after the command
