@@ -245,4 +245,22 @@ const dares = [
     "Text your best friend a completely random string of gibberish and act like it makes sense.",
     "Go brush your teeth right now and send an audio note of the scrubbing sound.",
     "Send a voice note howling at the moon like a lone wolf for 10 seconds straight.",
-    "
+    module.exports = {
+    name: "tnd",
+    category: "games",
+    description: "Play Truth or Dare in The Void.",
+    async execute(client, m) {
+        // Pick a random truth and a random dare
+        const randomTruth = truths[Math.floor(Math.random() * truths.length)];
+        const randomDare = dares[Math.floor(Math.random() * dares.length)];
+
+        const tndMessage = `*┌┤ { THE VOID } TRUTH OR DARE ├┐*\n\n` +
+            `👤 **Target:** @${m.sender.split('@')[0]}\n\n` +
+            `🔵 **Truth:** ${randomTruth}\n\n` +
+            `🔴 **Dare:** ${randomDare}\n\n` +
+            `*Reply with 'truth' or 'dare' to choose your fate!*`;
+
+        await client.sendMessage(m.chat, { text: tndMessage, mentions: [m.sender] }, { quoted: m });
+    }
+};
+
