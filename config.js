@@ -16,13 +16,13 @@ module.exports = {
     ERROR_MSG: process.env.ERROR_MSG || true,
     TIMEZONE: process.env.TIMEZONE || "Africa/Lagos",
     CAPTION: process.env.CAPTION || "",
-    STICKER_PACKNAME: process.env.STICKER_PACKNAME || "Kord",
-    STICKER_AUTHOR: process.env.STICKER_AUTHOR || "🤍",
+    STICKER_PACKNAME: process.env.STICKER_PACKNAME || "starry",
+    STICKER_AUTHOR: process.env.STICKER_AUTHOR || "💫",
     BOT_PRESENCE: process.env.BOT_PRESENCE || "available",
     REACT: process.env.REACT || false,
     READ_MESSAGE: process.env.READ_MESSAGE || "false",
     OWNER_NAME: process.env.OWNER_NAME || "Mirage",
-    BOT_NAME: process.env.BOT_NAME || "Kord",
+    BOT_NAME: process.env.BOT_NAME || "Ruthless Emperor",
     RENDER_API_KEY: process.env.RENDER_API_KEY,
     ANTIDELETE: process.env.ANTIDELETE || "on",
     ANTIDELETE_INCHAT: process.env.ANTIDELETE_INCHAT || "off",
@@ -44,11 +44,11 @@ module.exports = {
     WELCOME_MESSAGE: process.env.WELCOME_MESSAGE ||  `╭━━━々 𝚆 𝙴 𝙻 𝙲 𝙾 𝙼 𝙴 々━━━╮
 ┃ ➺ *々 Welcome @user! to @gname*
 ┃ ➺ *々 Members: @count*
-┃ ➺ We Hope You Have A Nice Time Here!
+┃ ➺🌌 Enter the void. Respect the laws of the Emperor, or face total erasure.
 ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━`,
     GOODBYE_MESSAGE: process.env.GOODBYE_MESSAGE || `╭━━━々 𝙶 𝙾 𝙾 𝙳 𝙱 𝚈 𝙴 々━━━╮
 ┃ ➺ *々 @user! left @gname!*
 ┃ ➺ *々 Members: @count*
-┃ ➺ We Hope He/She Had A Nice Time Here!
+┃ ➺🕳️ A pathetic departure. The Void has claimed another failure; do not look back.
 ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━`
 }
