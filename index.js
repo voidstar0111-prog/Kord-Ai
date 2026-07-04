@@ -1,8 +1,8 @@
-const { sock } = require("./core/sock")
-const { getPlatformInfo } = require("./core/dclient")
-const { spawn } = require("child_process")
-const http = require("http")
-const cron = require("node-cron")
+const { sock } = require("./core/sock");
+const { getPlatformInfo } = require("./core/dclient");
+const { spawn } = require("child_process");
+const http = require("http");
+const cron = require("node-cron");
 
 // Workaround function to dig out the obfuscated client from Node's require cache
 const locateHiddenClient = () => {
@@ -18,27 +18,28 @@ const locateHiddenClient = () => {
         }
     }
     return null;
-}
+};
 
 const run = async () => {
     try {
-        const platform = getPlatformInfo?.().platform?.toLowerCase() || ""
+        const platform = getPlatformInfo?.().platform?.toLowerCase() || "";
         if (!platform.includes("pterodactyl")) {
             const server = http.createServer((req, res) => {
-                res.writeHead(200, { "Content-Type": "text/plain" })
-                res.end("Bot is running\n")
-            })
-            const PORT = process.env.PORT || 5000
+                res.writeHead(200, { "Content-Type": "text/plain" });
+                res.end("Bot is running\n");
+            });
+
+            const PORT = process.env.PORT || 5000;
             server.listen(PORT, () => {
-                console.log(`Listening on port ${PORT}`)
-            })
+                console.log(`Listening on port ${PORT}`);
+            });
         }
 
         // 1. Boot up the obfuscated socket connection
-        await sock()
-        console.log("Ruthless Emperor: Socket initialization triggered...")
+        await sock();
+        console.log("Ruthless Emperor: Socket initialization triggered...");
 
-        // 2. Wait 5 seconds for the bot to authenticate and populate memory, then grab it
+        // 2. Wait 5 seconds for the bot to authenticate, then grab it from cache
         setTimeout(() => {
             const hiddenClient = locateHiddenClient();
             if (hiddenClient) {
@@ -50,7 +51,7 @@ const run = async () => {
         }, 5000);
 
         // 3. The Daily Scheduler
-        cron.schedule('0 8 * * *', async () => {
+        cron.schedule("0 8 * * *", async () => {
             try {
                 // Final fallback check if it hadn't loaded after 5 seconds during startup
                 if (!global.client) {
@@ -58,9 +59,9 @@ const run = async () => {
                 }
 
                 if (global.client) {
-                    const groupJid = '120363407966533696@g.us'; 
-                    const announcement = "👑 *RUTHLESS EMPEROR DAILY BLAST*\n\nThe Void demands your presence. Check the pinned messages for today's required tribute.";
-                    await global.client.sendMessage(groupJid, { text: announcement });
+                    const groupId = '120363407965336960@g.us';
+                    const announcement = "🚨 *RUTHLESS EMPEROR DAILY BLAST*\n\nThe Void demands your presence. Check the pinned messages.";
+                    await global.client.sendMessage(groupId, { text: announcement });
                     console.log("Daily blast sent successfully.");
                 } else {
                     console.error("Blast failed: Could not extract the bot connection from the hidden core files.");
@@ -71,8 +72,8 @@ const run = async () => {
         }, { timezone: "Africa/Lagos" });
 
     } catch (e) {
-        console.error("Critical Failure:", e)
+        console.error("Critical Failure:", e);
     }
-}
-run()
-                
+};
+
+run();
