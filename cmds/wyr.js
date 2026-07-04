@@ -1,7 +1,7 @@
 const dilemmas = [
-    // 1-50: Dark, Sarcastic & Group Chat Chaos
+    // --- WAVE 1 & 2 (1-100) ---
     ["Know exactly when you will die", "Know exactly how you will die"],
-    ["Have every text message you send read out loud to your parents", "Have every text message you receive posted publicly in this group"],
+    ["Have every text message you send read out loud to your parents", "Have every text message you receive posted publicly on your status"],
     ["Be trapped in an empty void alone for a year", "Be trapped in a room with the most annoying person here for a week"],
     ["Always have to speak the absolute, brutal truth", "Never be able to speak again and only communicate via emojis"],
     ["Have your entire browser history broadcasted to the group", "Have your physical room searched by group admins live on video"],
@@ -12,11 +12,11 @@ const dilemmas = [
     ["Have a permanently cracked phone screen", "Have a phone that randomly sends gibberish texts to your contacts once a day"],
     ["Live in a world with no anime or gaming content", "Live in a world with no music content whatsoever"],
     ["Be forced to reply to every message within 2 seconds", "Be forced to wait 2 hours before replying to any message"],
-    ["Accidentally send an edgy selfie to your boss or teacher", "Accidentally send a voice note mocking an admin directly into this chat"],
-    ["Wake up tomorrow with your physical appearance changed completely", "Wake up tomorrow with your voice permanently sounding like a cartoon character"],
+    ["Accidentally send an edgy selfie to your boss or teacher", "Accidentally send a voice note mocking an admin directly to them"],
+    ["Wake up tomorrow with your physical appearance changed completely", "Wake up tomorrow with your voice permanently sounding like a robot"],
     ["Always feel slightly too cold no matter what you wear", "Always feel slightly too hot no matter what you do"],
-    ["Lose all your custom WhatsApp sticker packs forever", "Have your WhatsApp profile picture permanently set to a cringe meme"],
-    ["Be trapped in a horror movie universe for 24 hours", "Be trapped in a bad romance anime universe for an entire year"],
+    ["Lose all your custom WhatsApp sticker packs forever", "Have your WhatsApp profile picture permanently set to a cringe selfie"],
+    ["Be trapped in a horror anime universe for 24 hours", "Be trapped in a bad romance anime universe for an entire year"],
     ["Have your thoughts displayed as subtitles above your head", "Have everything you say out loud repeated by a narrator"],
     ["Never be able to use a custom font or bold text formatting again", "Never be able to use emojis or reactions again"],
     ["Only be able to play text-based games for the rest of your life", "Never be able to use a bot command ever again"],
@@ -41,7 +41,7 @@ const dilemmas = [
     ["Have your custom bot session expire every single day", "Have your database completely wipe itself once a month"],
     ["Only communicate through 5-second voice notes", "Only communicate through paragraphs of at least 500 words"],
     ["Be a phantom floating unseen through the real world", "Be a physical being trapped inside a digital network layout"],
-    ["Always have your text messages formatted as an interrogation", "Always have your texts look like a cheerful customer service rep"],
+    ["Always have your text messages formatted as an interrogation", "Always have your texts look like a cheerful customer support agent"],
     ["Lose the ability to feel physical pain completely", "Lose the ability to feel fear completely"],
     ["Have an infinite supply of your favorite food but it tastes bland", "Have your favorite food taste amazing but you can only eat it once a year"],
     ["Be forced to delete your GitHub profile history", "Be forced to wipe your custom Railway projects clean"],
@@ -49,13 +49,108 @@ const dilemmas = [
     ["Be trapped in a time loop that resets every 24 hours", "Skip forward in time by 5 years with no memory of what happened"],
     ["Have the ability to fly but only at a walking speed", "Have the ability to run at 100mph but only in reverse"],
     ["Always drop your phone on your face when reading in bed", "Always hit your pinky toe against furniture when entering a dark room"],
-    ["Be completely forgotten by the internet profile servers", "Have your real-life identity pinned to the top of a search engine"],
+    ["Be completely forgotten by the internet profile servers", "Have your real-life identity pinned to the top of a server search forever"],
+    ["Have your deepest real-life flaw exposed to the chat", "Have your most embarrassing online interaction leaked to your family"],
+    ["Only be allowed to listen to phonk music on 0.5x speed", "Listen to a broken text-to-speech engine read lyrics for 5 hours straight"],
+    ["Be muted by an admin every time you make a typo", "Be forced to use a cringe signature text at the end of every message"],
+    ["Lose the ability to use custom stickers permanently", "Have every sticker you use immediately turn into a random minion meme"],
+    ["Have a bot call you out for being single every time you run a command", "Have the bot automatically ping you at 3:00 AM every night"],
+    ["Spend 24 hours reading an archive of your childhood texts", "Spend 24 hours listening to your own voice notes on loop"],
+    ["Be completely ghosted by everyone in this chat for a week", "Be flooded with 5,000 spam notifications from an unknown group"],
+    ["Have your phone's touch screen lag by exactly 1.5 seconds", "Have your phone render all media text upside down"],
+    ["Always open the wrong application when you unlock your device", "Have your phone automatically clear its cache files every hour"],
+    ["Be forced to wear a neon green tracksuit everywhere in public", "Be forced to use a light-themed interface on every single device"],
+    ["Only watch movies that have a 10% rating on Rotten Tomatoes", "Never be allowed to re-watch your favorite anime or series again"],
+    ["Have your entire music playlist replaced by elevator music", "Have your audio cut out completely every time a bass drop happens"],
+    ["Be trapped inside a void with nothing but a dial-up internet connection", "Have lightning-fast internet but it only loads historical dictionary pages"],
+    ["Always type in ALL CAPS like you are constantly screaming", "Always type in all lowercase with absolute zero punctuation or spaces"],
+    ["Accidentally like your ex's three-year-old photo live on stream", "Accidentally send your current draft code to a public community venue"],
+    ["Have your phone overheat to 50°C every time you open a chat", "Have your phone's brightness locked at the absolute lowest setting permanently"],
+    ["Be forced to explain the plot of an edgy anime to your grandparents", "Be forced to act out a chaotic sticker pack in real life in front of a crowd"],
+    ["Lose your custom configurations and rebuild your framework from scratch", "Have your deployment succeed but the bot runs at a 10-second delay"],
+    ["Always have people think you are being deeply sarcastic when you're serious", "Always have people take your jokes as a serious offense"],
+    ["Be completely unable to change your profile bio for an entire year", "Have your bio change randomly to a cheesy motivational quote every day"],
+    ["Have your phone screen turn into a mirror every time you open a private message", "Have your front camera take a background photo every time you type"],
+    ["Only be able to play video games at 15 frames per second", "Only play video games with a continuous 300ms network delay ping"],
+    ["Have your room look like a complete technological junkyard", "Have your room look like a sterile, completely white hospital ward"],
+    ["Be known as the most chaotic member in the history of the group", "Be completely forgotten the second you close the application layout"],
+    ["Always have a small pebble inside your left shoe that you can't remove", "Always have a slight static shock whenever you tap your screen surface"],
+    ["Have a bot roast your coding skills every time you push a commit", "Have your deployment file fail to compile three times before working"],
+    ["Only communicate using Shakespearean English prose formatting", "Only communicate using absolute brain-rot internet slang terms"],
+    ["Be forced to sit through a 4-hour lecture on something you already know", "Be forced to give a 1-hour presentation on a topic you know nothing about"],
+    ["Have your phone memory drop to 16GB total storage space layout", "Have your phone background permanently locked to a picture of a brick wall"],
+    ["Always wake up exactly one minute before your morning alarm rings", "Always sleep through your first four alarms consecutively without waking"],
+    ["Have a completely empty contact list except for bot automated system profiles", "Have 1,000 active contacts who all tag you simultaneously once a day"],
+    ["Be completely banned from using any custom shortcuts or keybind setups", "Have your keyboard layout switch randomly between QWERTY and AZERTY"],
+    ["Have your custom audio tracks play at a chipmunk pitch style frequency", "Have your voice notes sound like a deep underwater echo distortion channel"],
+    ["Only drink completely lukewarm water for the rest of your physical life", "Only eat food that has been blended into a smooth liquid paste format"],
+    ["Have your shadow move exactly half a second slower than your actual body", "Have your reflection in mirrors always look slightly disappointed in you"],
+    ["Be forced to use an ancient trackball mouse for all your navigation tasks", "Be forced to navigate your phone screen using a gaming controller joystick"],
+    ["Always have your text messages interpreted as a declaration of war", "Always have your serious warnings treated like a complete comedy routine"],
+    ["Have your favorite character eliminated in the opening scene of a season", "Have your favorite series canceled on a massive unaddressed plot mystery"],
+    ["Be completely unable to view image attachments or status media updates", "Be completely unable to send text messages and rely solely on image files"],
+    ["Spend an hour cleaning up your repository directory after a broken build", "Spend an hour manually typing out API parameters because documentation failed"],
+    ["Have a tiny digital ghost inhabit your phone that moves icons around", "Have a digital ghost that randomly changes your notification alert sound"],
+    ["Always have a slight layer of dust settle over your workstation area", "Always have one pixel on your monitor screen stuck on a bright neon pink color"],
+    ["Be forced to explain your custom framework configurations to a toddler", "Be forced to write code using a pen and paper before typing it out fully"],
+    ["Have your digital profile aesthetic look like a corporate financial webpage", "Have your profile aesthetic look like a chaotic early 2000s web template"],
+    ["Always lose your train of thought right as you start typing a paragraph", "Always press the send button right before realizing you made a massive typo"],
+    ["Be stuck in an elevator for three hours with an incredibly talkative stranger", "Be stuck in an elevator completely alone in pitch-black darkness for six hours"],
+    ["Have your phone background change to a random image from your gallery weekly", "Have your phone background reveal your screen time statistics to everyone"],
+    ["Only use custom themes that feature blindingly bright pastel color choices", "Only use themes where text is so dark it blends directly into the canvas background"],
+    ["Have a bot automatically rate your text messages out of 10 for cringe factor", "Have a bot completely filter your messages if they sound too serious"],
+    ["Be completely satisfied with your current custom code framework build layout", "Have your deployment succeed instantly but you have no idea why it works"],
 
-    // 51-500: Bulk Dynamic Matrix Options (Fills out the pairs up to 1000 discrete choices)
-    ...Array.from({ length: 450 }, (_, i) => [
-        `Face Void Alternative Path A-${i + 51}: Accept total control over digital infrastructure at the cost of your personal privacy metrics.`,
-        `Face Void Alternative Path B-${i + 51}: Maintain absolute systemic anonymity while being completely restricted from modern cloud deployments.`
-    ])
+    // --- WAVE 3 (101-150) ---
+    ["Have your bot completely flame an admin whenever they use a command", "Have the bot randomly log out of its session when the chat gets busy"],
+    ["Accidentally share your real-life location pin to a massive public group", "Accidentally clear your entire saved custom sticker archive collection"],
+    ["Only be able to watch short-form video content with no sound track", "Only listen to full length music tracks with a heavy static overlay filter"],
+    ["Have your keyboard layout lag out completely every time you type 'void'", "Have your enter key automatically submit incomplete sentence fragments"],
+    ["Be forced to moderate a highly chaotic gaming server entirely on your own", "Be completely stripped of your admin status parameters across all platforms"],
+    ["Have your phone automatically read incoming text alerts out loud in public", "Have your device completely disable its vibrate motor warning notifications"],
+    ["Only play multiplayer video games with completely randomized key mappings", "Only use a mouse device where the axis controls are permanently inverted"],
+    ["Have your primary profile status bio locked to a cheesy pickup line", "Have your profile background look like a bright pink matching wallpaper layout"],
+    ["Be completely unable to mute notifications for a single active chat room", "Receive a system ping every single time any member posts a sticker asset"],
+    ["Have your code editor theme locked to a blindingly bright neon white canvas", "Have your script files lose all syntax highlighting color markers permanently"],
+    ["Accidentally broadcast your internal storage directory listing to the squad", "Accidentally leak your custom bot database configuration properties details"],
+    ["Only stream media files at a maximum clarity resolution of 144p quality", "Wait exactly 45 seconds for every single image asset file download step"],
+    ["Have the bot automatically roast your profile picture every Sunday morning", "Have the bot change its greeting response interface text to mock your nickname"],
+    ["Spend 3 hours manually renaming 500 repository files on a mobile interface", "Spend 3 hours explaining basic framework syntax paths to a toxic troll profile"],
+    ["Have your phone battery drain down 5% for every automated text reply you send", "Have your connection latency rise by 50ms for every active member typing online"],
+    ["Only communicate using weirdly specific technical documentation dictionary words", "Only speak in complete corporate public relations script announcements format"],
+    ["Have your target profile avatar switched to a picture of an old potato graphic", "Have your text bubble design colors look like a light green grid layout matrix"],
+    ["Be permanently stuck in a chat where every message disappears within 3 seconds", "Be stuck in a layout where you can only view updates once every 10 minutes"],
+    ["Accidentally call an admin 'mom' or 'dad' inside a fully packed community chat", "Accidentally send a voice recording of your heavy breathing patterns to the board"],
+    ["Have your screen layout completely freeze up every time a user triggers an update", "Have your custom bot execute the exact opposite action parameters of your input"],
+    ["Only watch movies where the main plot resolution relies on a bad joke gimmick", "Only read stories where the protagonist fails their primary mission objective completely"],
+    ["Have your microphone hardware channel capture an annoying echo loop feedback trail", "Have your system speakers output sound at a weird scratchy radio frequency model"],
+    ["Be recognized everywhere as a highly dramatic digital community character profile", "Be completely invisible to all automated server scripts and system configurations"],
+    ["Have a small water drop graphic permanently rendering over your main text entry box", "Have your text cursor blink at an incredibly fast, distracting stroke speed frequency"],
+    ["Spend an entire afternoon correcting dependencies inside a broken project file architecture", "Spend an afternoon manually typing out database logs onto a text document paper sheets format"],
+    ["Have your custom system deployment workflow succeed but it requires a manual restart daily", "Have your script compilation run perfectly but it completely resets your cache limits"],
+    ["Only use custom interfaces that feature an intense neon yellow theme coloring scheme", "Only use canvas themes where text color matching is identical to the background fill shade"],
+    ["Have an automated script verify your messages for proper punctuation marks before sending", "Have an automated script insert a random ironic sarcasm emoji at the end of paragraphs"],
+    ["Be completely satisfied with your repository setup but lose your hosting control keys", "Maintain perfect server infrastructure parameters but the bot output text looks glitchy"],
+    ["Have your phone background switch to a generic stock corporate office picture monthly", "Have your system analytics report display your hourly text patterns to your main contacts"],
+    ["Only text in short three-word phrases for the next forty-eight hours straight", "Only post text blocks that are at least three hundred characters long per sentence entry"],
+    ["Accidentally link your private coding testing room onto a public server dashboard tracking registry", "Accidentally delete your main custom environment variables file right before a massive group launch day event"],
+    ["Have your screen automatically invert its contrast styling settings whenever the system clock reaches midnight", "Have your device display a fake warning notification pop-up block every single time you attempt a connection change step"],
+    ["Spend an hour explaining complex algorithmic paths to an active spambot entity profile setup link", "Spend an hour manually typing out unique array entries on a tiny mobile keyboard layout matrix pane interface"],
+    ["Have your custom audio tracks sound like an ancient low-bitrate music file recording track stream", "Have your voice messages automatically run through a robotic vocoder filter effect configuration parameter module"],
+    ["Only eat food that has been prepared using an absolute maximum of two ingredients format layout", "Only drink liquids that are completely pitch-black in color hue shades for a full month duration period"],
+        ["Have your physical shadow look like a completely distorted cybernetic silhouette structure tracking model map", "Have your digital mirror reflections display a continuous matrix stream code sequence tracking your face expressions live tracking surface"],
+    ["Be forced to navigate your phone application layout matrix interfaces using only voice command inputs software tools profiles", "Be forced to tap your phone screen using a small wooden stylus pen tool instrument asset device setup exclusively for communication tasks"],
+    ["Always have your helpful advice interpreted as a highly elaborate psychological trick plan design method approach", "Always have your quiet moments treated like a serious signal of an upcoming massive server maintenance sweep operation sequence launch phase"],
+    ["Have your favorite narrative character turn out to be a completely fake illusory holographic simulation asset projection all along the line series", "Have your long-awaited final update bundle pack canceled indefinitely on the exact morning of the scheduled distribution timeline launch hour marker date"],
+    ["Be completely unable to view direct media document attachments inside your primary workspace incoming logs database history files", "Be completely unable to broadcast text updates and rely solely on sending highly abstract custom vector art design graphics to clear messages points"],
+    ["Spend an entire day clearing up duplicate file index paths inside a completely broken asset folder tree repository catalog module structure", "Spend an hour typing out custom token parameters manually because the main automated deployment documentation module missing its index key files entirely"],
+    ["Have a tiny digital glitch animation render across your phone interface every time a contact updates their status parameters", "Have a custom notification sound that sounds exactly like a distant breaking glass audio asset play whenever an admin tags your identification tag string"],
+    ["Always lose your train of thought right as your text cursor enters a highly active group chat window text canvas area structure", "Press the clear text canvas option by absolute accident right as you finish typing out a highly detailed response paragraph layout block"],
+    ["Be stuck inside an enclosed subway terminal car area for four hours with a highly enthusiastic digital marketing sales agent representative manager profile", "Be stuck inside an empty system validation server room alone in absolute pitch-black darkness configurations parameters for a full eight-hour period block segment"],
+    ["Have your interface background change to a highly random meme screenshot file asset taken from your personal device storage vaults archives every single Monday morning", "Have your device data usage reports automatically compile into a clean infographic chart sheet layout and pin it to the top of your group profile overview page area"],
+    ["Only use custom visual layout themes that feature intense blindingly bright pastel color selections across all menu item button elements configurations fields", "Only use display theme designs where the main body font coloration is so dark it blends directly into the surrounding solid midnight canvas environment template backdrop"],
+    ["Have an automated server script bot score your text phrasing choices out of ten for overall cringe metrics data scores live in front of the community chat room boards", "Have an automated utility filter script block your transmission entries entirely if they do not contain a minimum technical reference keyword sequence inside the syntax parameters"],
+    ["Achieve perfect operation configurations parameters across your master build branch but lose all custom administrative access control passes to the deployment terminal module box dashboard", "Have your server automation pipeline compile and execute your script files flawlessly but the resulting console text terminal strings output completely scrambled characters data blocks"]
 ];
 
 module.exports = {
@@ -68,18 +163,16 @@ module.exports = {
         const optionB = randomPair[1];
 
         const wyrMessage = `
- ╭───「 《♤ THE VOID ♤》 WYR 」
- │ 
- │ 👤 **Target:** @${m.sender.split('@')[0]}
- │ 
- │ 🔴 **Option A:** ${optionA}
- │ ───  He melodrama  ───
- │ 🔵 **Option B:** ${optionB}
- │ 
- ╰───────────────────────────
- *Reply to this message with [ A ] or [ B ] to lock your fate.*`;
+╭───「 《♤ THE VOID ♤》 WYR 」
+│ 
+│ 👤 **Target:** @${m.sender.split('@')[0]}
+│ 
+│ 🔴 **Option A:** ${optionA}
+│ 🔵 **Option B:** ${optionB}
+│ 
+╰───────────────────────────
+*Reply with 'A' or 'B' to make your choice!*`;
 
         await client.sendMessage(m.chat, { text: wyrMessage, mentions: [m.sender] }, { quoted: m });
     }
 };
-  
